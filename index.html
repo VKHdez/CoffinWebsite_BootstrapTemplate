@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffin</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css\bootstrap.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css\main.css">
+
+    <script src="js/menu.js"></script>
+    <script src="js/scroll.js" async></script>
+
+</head>
+<body>
+    <button class="scrollTop">
+        <i class="bi-arrow-up-circle"></i>
+    </button>
+
+    <nav class="navbar navbar-expand-lg navbar-dark coffe-navbar fixed-top position-absolute">
+        <div class="container d-flex align-items-center">
+            <a class="coffe-navbar-title" href="#">Coffin</a>
+            
+            <button id="toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#coffeMenu" aria-controls="coffeMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse coffe-menu" id="coffeMenu">
+                <div class="row">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item col-xs-12">
+                            <a class="nav-link" href="#productos">Productos</a>
+                        </li>
+
+                        <li class="nav-item col-xs-12">
+                            <a class="nav-link" href="#ubicacion">Ubicación</a>
+                        </li>
+
+                        <li class="nav-item col-xs-12">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+       </div>
+    </nav>
+
+
+    <div id="coffe-carousel" class="carousel slide carousel-fade coffe-carousel"  data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#coffe-carousel" data-bs-slide-to="0" aria-label="Slie 1" aria-current="true" class="active"></button>
+            <button type="button" data-bs-target="#coffe-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-cover-img" style="background-image:url('img/coffe_1.gif');"></div>
+                <div class="carousel-inner-container">
+                    <h3 class="carousel-item-title">Es un buen día para un café, no crees?</h3>
+                    <p>El mejor café, directo de colombia a tu hogar</p>
+                    <a href="#productos" class="coffe-link">Conoce nuestros productos</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-cover-img" style="background-image:url('img/coffe_2.gif');"></div>
+                <div class="carousel-inner-container">
+                    <h3 class="carousel-item-title">Grano natural, proceso natural...</h3>
+                    <p>Proceso artesanal de machacado de los granos, para un olor y sabor perdurables</p>
+                    <a href="#ubicacion" class="coffe-link">Localizanos</a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- END CAROUSEL -->
+
+
+    <section id="productos" class="container-fluid coffe-section">
+        <div class="container">
+            <h2 class="coffe-section-title">Nuestros Productos</h2>
+            <div class="row p-0 d-flex justify-content-evenly">
+
+                <div class="card col-md-3 col-xs-8 mb-4 p-0">
+                    <img class="card-img-top" src="img/coffe_card.gif" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Café de Grano Completo</h5>
+                        <p class="card-text">Nuestro café es importado de colombia, aquí se procesa a mano para obtener un sabor y aroma perdurables</p>
+                    </div>
+                </div>
+
+                <div class="card col-md-3 col-xs-10 mb-4 p-0">
+                    <img class="card-img-top" src="img/coffe_card.gif" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Presentación de 10 onzas</h5>
+                        <p class="card-text">La presentación de 10 onzas ofrece café para el hogar, a cualquier momento.</p>
+                    </div>
+                </div>
+
+                <div class="card col-md-3 col-xs-10 mb-4 p-0">
+                    <img class="card-img-top" src="img/coffe_card.gif" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Cafetería Coffin</h5>
+                        <p class="card-text">También servimos el mejor café!. Visita cualquier sucursal coffin para deleitar tu paladar con café fresco y natural!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> <!-- END SECTION PRODUCTS -->
+
+    <section id="ubicacion" class="container-fluid coffe-section ubicacion-section">
+        <div class="container ubicacion-container">
+
+            <h2 class="coffe-section-title section-white-title">Ubicación</h2>
+
+            <div class="row"> 
+                <img class="coffe-map col-lg-10 m-auto col-md-8 col-xs-12 p-0" src="img/map.gif" alt="">
+            </div>
+
+            <p class="mt-5">Actualmente estamos ubicados en <strong>Amozoc y Tepeaca</strong>. Y enviamos a las siguientes localidades!</p>
+
+            <ul>
+                <li>Puebla de Zaragoza</li>
+                <li>Tecali de Herrera</li>
+                <li>Acajete</li>
+                <li>Cholula</li>
+                <li>San Pablo del Monte</li>
+                <li class="fst-italic">Próximamente en Huejotzingo y Zacatelco!</li>
+            </ul>
+        </div>
+        <div class="ubicacion-img"></div>
+
+    </section> <!-- END SECTION UBICACION -->
+
+    <section id="contacto" class="container-fluid coffe-section">
+        <div class="container">
+            <h2 class="coffe-section-title">Contacto</h2>
+            <form action="" class="col-lg-8 m-auto">
+                <div class="mb-3">
+                    <label class="form-label" for="coffe-email">Correo electrónico</label>
+                    <input class="form-control" id="coffe-email" type="email" placeholder="iwantcoffe@coffe.com">
+                </div>
+                <div class="mb-3">
+                    <label for="coffe-message" class="form-label">Password</label>
+                
+                    <textarea type="text" class="form-control" id="coffe-message" rows="5" placeholder="El café colombiano es bueno, porqué no pedimos una bolsa de 10 onzas! :D"></textarea>
+
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar mensaje!</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <ul>
+                        <li class="coffe-footer-list-header">Links</li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#ubicacion">Ubicación</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6 col-lg-6">
+                    <ul>
+                        <li class="coffe-footer-list-header">Contacto</li>
+                        <li><a href="#">+52 222 222 22 22</a></li>
+                        <li><a href="#">iwantcoffe@coffin.com</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <p class="m-auto d-block coffe-footer-author">Hecho por VHIRAL Software Solutions</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
